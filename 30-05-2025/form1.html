@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body bgcolor=#F0F8FF>
+    <center>
+        <h1><font color=#8B0000>Registration Form</font></h1>
+        <br><br>
+    <form>
+        <table cellspacing="5" cellpadding="15">
+            <tr>
+                <td><label>Name:<font color="red">*</font> </label></td>
+                <td><input type="text" name="name" pattern="[a-zA-Z ]*" required title="enter valid name"></td>
+            </tr>
+            <tr>
+                <td><label>Password:<font color="red">*</font> </label></td>
+                <td><input type="password" name="password" minlength="8" maxlength="15" required></td>
+            </tr>
+            <tr>
+                <td><label>Mail ID:<font color="red">*</font> </label></td>
+                <td><input type="email" name="mail" required></td>
+            </tr>
+            <tr>
+                <td><label>Date of Birth:<font color="red">*</font> </label></td>
+                <td><input type="date" name="dob" required></td>
+            </tr>
+            <tr>
+                <td><label>Gender:<font color="red">*</font> </label></td>
+                <td><input type="radio" name="gender" required>Male<input type="radio" name="gender">Female</td>
+            </tr>
+            <tr>
+                <td><label>Upload Resume:<font color="red">*</font> </label></td>
+                <td><input type="file" name="resume" required></td>
+            </tr>
+            <tr>
+                <td><label>No. of backlogs:<font color="red">*</font> </label></td>
+                <td><input type="number" name="backlogs" min="0" required></td>
+            </tr>
+            <tr>
+                <td><label>Skills:<font color="red">*</font> </label></td>
+                <td><input type="checkbox" name="skills">Python<br><br>
+                    <input type="checkbox" name="skills">Java<br><br>
+                    <input type="checkbox" name="skills">C++<br><br>
+                    <input type="checkbox" name="skills">HTML<br><br>
+                    <input type="checkbox" name="skills">CSS<br><br>
+                    <input type="checkbox" name="skills">JavaScript<br><br>
+                    <input type="checkbox" name="skills">Others
+                </td>
+            </tr>
+            <tr>
+                <td><label>If Others, please mention your skills: </label></td>
+                <td><input type="text" name="skillset"></td>
+            </tr>
+            <tr>
+                <td><label>Github Profile link:<font color="red">*</font> </label></td>
+                <td><input type="url" name="github" required></td>
+            </tr>
+            <tr>
+                <td><label>State:<font color="red">*</font> </label></td>
+                <td><select name="state" required>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tamilnadu">Tamilnadu</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Maharastra">Maharastra</option>
+                    <option value="Kerala">Kerala</option>
+                    </select>
+            </tr>
+            <tr>
+                <td><label>College Name:<font color="red">*</font> </label></td>
+                <td><input list="college">
+                <datalist id="college">
+                    <option value="Andhra University">Andhra University</option>
+                    <option value="GITAM">GITAM</option>
+                    <option value="ANITS">ANITS</option>
+                    <option value="Ramachandra College">Ramachandra College</option>
+                    <option value="Eluru college of Engineering">Eluru college of Engineering</option>
+                    <option value="GVP">GVP</option>
+                </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Any thing you want to convey: </td>
+                <td><textarea name="conveying" rows="5" cols="30" placeholder="write something here...."></textarea></td>
+            </tr>
+        </table>
+        <input type="submit" value="Register">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="Cancel">
+    </form>
+    </center>
+</body>
+</html>
