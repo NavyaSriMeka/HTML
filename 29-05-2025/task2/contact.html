@@ -1,0 +1,54 @@
+<!doctype HTML>
+<head>
+<title>E-Commerce</title>
+</head>
+<body>
+<center><h1><font color=#808000>DRF ECOM PLATFORM</font></h1>
+<hr>
+<p>
+<a href="TASK.html">Home</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="laptops.html">Laptops</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="mobiles.html">Mobiles</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="watches.html">Watches</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact.html">Contact</a>
+</p>
+<br><br><br><br>
+<form>
+<table cellspacing="15" cellpadding="15" bgcolor=#F0F8FF>
+
+    <tr>
+    <td><label>Name:<font color="red">*</font> </label></td>
+    <td><input type="text" name="name" placeholder="enter your name" pattern="[a-zA-Z ]*" required title="enter valid name"></td>
+    </tr>
+    <tr>
+    <td><label>Contact number:<font color="red">*</font> </label></td>
+    <td><input type="text" name="phone" placeholder="enter phone number" pattern="[6789][0-9]{9}" required title="enter valid phone number"></td>
+    </tr>
+    <tr>
+    <td><label>Mail ID: </label></td>
+    <td><input type="email" name="mail" placeholder="enter your mail id"></td>
+    </tr>
+    <tr>
+    <td><label>Issued related to:<font color="red">*</font> </label></td>
+    <td>
+        <input list="issues" required>
+        <datalist name="issues" id="issues">
+        <option value="delivery related">delivery related</option>
+        <option value="refunds related">refunds related</option>
+        <option value="return & pickup related">return & pickup related</option>
+        <option value="cancellation related">cancellation related</option>
+        <option value="others">others</option>
+        </datalist>
+    </td>
+    </tr>
+    <tr>
+        <td><label>Explain your issue:<font color="red">*</font> </label></td>
+        <td><textarea name="issue" cols="30" rows="5" placeholder="write something here...." required></textarea></td>
+    </tr>
+</table>
+<input type="submit" value="Submit">
+<input type="reset" value="Cancel">
+</form>
+</center>
+</body>
+</html>
