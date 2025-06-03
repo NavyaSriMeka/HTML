@@ -6,11 +6,11 @@
     <title>Instagram</title>
     <style>
         .logo{
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            margin-left:970px;
+            font-family: "Dancing Script", cursive;
+            margin-left:950px;
             margin-top:-415px;
-            font-size:37px;
-
+            font-size:47px;
+            font-weight:900;
         }
         img{
             height:450px;
@@ -19,8 +19,8 @@
             margin-left:270px;
         }
         .mydiv{
-            margin-left:920px;
-            margin-top:30px;
+            margin-left:900px;
+            margin-top:25px;
             width:270px;
         }
         input{
@@ -57,7 +57,74 @@
             font-size:12px;
             font-weight:900px;
         }
+        a{
+            display: inline-block;
+            text-decoration: none;
+            font-size:14px;
+            
+        }
+        .login-facebook{
+            color: #0095F6;
+            font-weight:600;
+            margin-left:60px;
+            margin-top:10px;
+        }
+        i{
+            width:25px;
+        }
+        .fa-facebook{
+            font-size: 18px;
+        }
+        .forgot{
+            color:rgb(0, 55, 107);
+            margin-left:86px;
+            margin-top: 18px;
+        }
+        p{
+            margin-left:42px;
+            font-size: 14px;
+            margin-top:45px;
+        }
+        .sign-up{
+            color:#0095F6;
+            font-weight:600;
+        }
+        li{
+            display:inline-block;
+            margin-left:12px;
+        }
+        .down-nav{
+            margin-top:75px;
+        }
+        .nav-div{
+            margin-left:280px;
+        }
+        .nav-a{
+            color:rgb(115, 115, 115);
+            font-size: 12px;
+            font-weight: 400;
+        }
+        select{
+            border:none;
+            color:rgb(115, 115, 115);
+            font-size: 12px;
+            font-weight: 400;
+        }
+        .dropdown{
+            margin-left:600px;
+        }
+        .meta-p{
+            color:rgb(115, 115, 115);
+            font-size: 12px;
+            font-weight: 400;
+            margin-left:130px;
+            margin-top:-18px;
+        }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <img src="instagram-web-lox-image.png">
@@ -69,10 +136,54 @@
         <fieldset>
             <legend>&nbsp;&nbsp;&nbsp;&nbsp;OR&nbsp;&nbsp;&nbsp;&nbsp;</legend>
         </fieldset>
-        <a href="">Log in with Facebook</a>
-        <a href="">Forgot password?</a>
-        <p>Don't have an account?</p><a href="">Sign up</a>
+        <a href="" class="login-facebook"><i class="fa-brands fa-facebook"></i> Log in with Facebook</a>
+        <a href="" class="forgot">Forgot password?</a>
+        <p>Don't have an account?  <a href="" class="sign-up">Sign up</a></p>
 
+    </div>
+    <nav class="down-nav">
+        <div class="nav-div">
+        <ul>
+            <li><a href="" class="nav-a">Meta</a></li>
+            <li><a href="" class="nav-a">Jobs</a></li>
+            <li><a href="" class="nav-a">Help</a></li>
+            <li><a href="" class="nav-a">About</a></li>
+            <li><a href="" class="nav-a">API</a></li>
+            <li><a href="" class="nav-a">Blog</a></li>
+            <li><a href="" class="nav-a">Privacy</a></li>
+            <li><a href="" class="nav-a">Terms</a></li>
+            <li><a href="" class="nav-a">Locations</a></li>
+            <li><a href="" class="nav-a">Instagram Lite</a></li>
+            <li><a href="" class="nav-a">Threads</a></li>
+            <li><a href="" class="nav-a">Contact Uploading & Non-Users</a></li>
+            <li><a href="" class="nav-a">Meta Verified</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="dropdown">
+        <select>
+            <option value="Afrikaans">Afrikaans</option>
+            <option value="中文 & 台灣">中文 & 台灣</option>
+            <option value="Český">Český</option>
+            <option value="Dansk">Dansk</option>
+            <option value="Nederlands">Nederlands</option>
+            <option value="Suomi">Suomi</option>
+            <option value="Français">Français</option>
+            <option value="Deutsch">Deutsch</option>
+            <option value="English" selected>English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="தமிழ்">தமிழ்</option>
+            <option value="मराठी">मराठी</option>
+            <option value="नेपाली">नेपाली</option>
+            <option value="Français (Canada)">Français (Canada)</option>
+            <option value="සිංහල">සිංහල</option>
+            <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+            <option value="Norsk">Norsk</option>
+            <option value="English (UK)">English (UK)</option>
+            <option value="Bahasa Melayu">Bahasa Melayu</option>
+            <option value="Magyar">Magyar</option>
+        </select>
+        <p class="meta-p">© 2025 Instagram from Meta</p>
     </div>
 </body>
 </html>
